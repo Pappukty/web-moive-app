@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #bf6f13;
+  --secondary-color: #e88e27;
+}
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 75px;
+  color: white;
+  background-color: rgb(28, 28, 29);
+}
+.nav-links {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  width: 75%;
+}
+.href {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.href:hover {
+  color: #e88e27;
+}
+.menu {
+  display: none;
+}
+
+.header form {
+  width: 70%;
+  margin: 0 auto;
+}
+.search-btn {
+  width: 80%;
+  margin: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputText {
+  width: 300px;
+  padding: 10px 10px;
+  margin: 0.5rem;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: black;
+}
+.search-btn button {
+  padding: 6px 10px;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  background-color: var(--secondary-color);
+  margin: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.movie .poster {
+  width: 100%;
+  height: 250px;
+}
+.movie:hover {
+  transform: translateY(-5px);
+  border: 1px solid whitesmoke;
+  box-shadow: 0px 5px 5px 0px white(0, 0, 0, 0.5);
+}
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movie-details .box {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.movie-details .title {
+  width: 160px;
+  font-size: 15px;
+  text-align: center;
+}
+.movie-details .overview {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+  background-color: rgb(193, 143, 50);
+  opacity: 0.9;
+  color: white;
+  box-sizing: border-box;
+  padding: 1rem;
+  transition: all 0.4s ease-in-out;
+  overflow-y: auto;
+  transform: translateY(101%);
+}
+.movie-details:hover .overview {
+  transform: translateY(0%);
+}
+.color {
+  color: white;
+}
+.rating {
+  background-color: var(--primary-color);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.share-icon {
+}
+.share {
+  position: absolute;
+  right: 150px;
+  top: 300px;
+  bottom: 0px;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(110, 104, 104);
+  cursor: pointer;
+}
+.share:hover {
+  color: brown;
+}
+
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mob {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: rgb(47, 49, 49);
+    left: 0;
+    top: 75px;
+    transition: all o.5s ease-out;
+    width: 97%;
+    margin: 0 auto;
+  }
+  .href {
+    color: white;
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 98%;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(49, 49, 59);
+    outline: none;
+    top: 15px;
+    right: 25px;
+    border: none;
+  }
+
+  .header form {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .search-btn {
+    width: 80%;
+    margin: 0.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputText {
+    width: 100px;
+    padding: 5px 7px;
+    margin: 0.5rem;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: black;
+    position: relative;
+  }
+  .search-btn button {
+    padding: 5px 10px;
+    display: none;
+  }
+  .menubar {
+    width: 30%;
+    margin: 0 auto;
+    position: static;
+  }
+  /* .menu {
+    width: 60%;
+    margin: 0 auto;
+    padding: 3px 5px;
+  } */
+  .header form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .share {
+    position: absolute;
+    right: 50px;
+    top: 350px;
+    bottom: 0px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(110, 104, 104);
+    cursor: pointer;
+  }
+}
