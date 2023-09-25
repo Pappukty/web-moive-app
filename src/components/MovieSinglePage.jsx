@@ -3,6 +3,7 @@ import "../pages/style/MovieSinglePage.css";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/gray-movie-written-icon-png-UpaYYD.png";
 import clip from "../assets/mp.jpg";
+import { Link } from "react-router-dom";
 import { BsStarHalf } from "react-icons/bs";
 import { useStateContext } from "../context/context";
 const MovieSinglePage = () => {
@@ -20,12 +21,10 @@ const MovieSinglePage = () => {
         <div className="head-nav">
           <div className="nav">
             <div className="review">
-              <img src={logo} alt="" className="logo" width="110px"></img>
+              <Link to="/">
+                <img src={logo} alt="" className="logo" width="110px"></img>
+              </Link>
             </div>
-
-            <button className="link-hm" onClick={handelHome}>
-              Home
-            </button>
           </div>
         </div>
         <div>

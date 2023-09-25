@@ -36,8 +36,11 @@
 }
 .review {
   margin: 0 1rem;
-
+  cursor: pointer;
   margin-top: 2rem;
+}
+.review:hover {
+  color: orangered;
 }
 .image-clip {
   width: 60%;

@@ -126,11 +126,11 @@ const Main = () => {
                 }}
                 value={search}
                 onKeyPress={searchMovie}
-              ></input>
+    ></input>
 
-              <button>
+              {/* <button>
                 <BiSearch />
-              </button>
+              </button> */}
             </div>
           </from>
           <div className="menubar">
