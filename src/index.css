@@ -14,8 +14,14 @@ body {
 }
 body {
   background-color: rgba(0, 0, 0, 0.928);
+  overflow-x: hidden;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 }
